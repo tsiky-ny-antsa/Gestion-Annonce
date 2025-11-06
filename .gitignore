@@ -24,6 +24,7 @@ hs_err_pid*
 .settings/
 .project
 .classpath
+javafx-sdk-18.0.2
 
 # OS
 .DS_Store
