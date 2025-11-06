@@ -3,6 +3,7 @@ run = "java --module-path javafx-sdk-18.0.2/lib --add-modules javafx.controls Ma
 
 entrypoint = "Main.java"
 hidden = ["**/*.class", "javafx-sdk-18.0.2"]
+modules = ["java-graalvm22.3"]
 
 [unitTest]
 language = "java"
@@ -49,3 +50,26 @@ mainClass = "Main"
 
 [agent]
 expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "FFR Application"
+
+[[workflows.workflow]]
+name = "FFR Application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "mvn javafx:run"
+
+[workflows.workflow.metadata]
+outputType = "vnc"

@@ -1,0 +1,129 @@
+.root {
+    -fx-base: #2d5016;
+    -fx-background: #f0f8e8;
+    -fx-control-inner-background: white;
+    -fx-accent: #4a8c2a;
+    -fx-focus-color: #6bb042;
+}
+
+.label {
+    -fx-text-fill: #2d5016;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #4a8c2a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 5;
+    -fx-padding: 10 20 10 20;
+}
+
+.button:hover {
+    -fx-background-color: #6bb042;
+}
+
+.button:pressed {
+    -fx-background-color: #3a7020;
+}
+
+.text-field, .text-area, .combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #a8d88b;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.text-field:focused, .text-area:focused, .combo-box:focused {
+    -fx-border-color: #4a8c2a;
+    -fx-border-width: 2;
+}
+
+.tab-pane {
+    -fx-background-color: #f0f8e8;
+    -fx-tab-min-width: 120px;
+}
+
+.tab {
+    -fx-background-color: #c8e6b8;
+    -fx-text-fill: #2d5016;
+    -fx-font-weight: bold;
+}
+
+.tab:selected {
+    -fx-background-color: #4a8c2a;
+    -fx-text-fill: white;
+}
+
+.tab:hover {
+    -fx-background-color: #a8d88b;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #a8d88b;
+}
+
+.table-view .column-header {
+    -fx-background-color: #4a8c2a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #a8d88b;
+    -fx-text-fill: #2d5016;
+}
+
+.login-container {
+    -fx-background-color: linear-gradient(to bottom, #6bb042, #4a8c2a);
+    -fx-padding: 30;
+}
+
+.login-box {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d5016;
+}
+
+.error-label {
+    -fx-text-fill: #d32f2f;
+    -fx-font-size: 12px;
+}
+
+.success-label {
+    -fx-text-fill: #4a8c2a;
+    -fx-font-size: 12px;
+}
+
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #a8d88b;
+    -fx-border-radius: 3;
+}
+
+.check-box {
+    -fx-text-fill: #2d5016;
+}
+
+.check-box:selected > .box {
+    -fx-background-color: #4a8c2a;
+}
+
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #a8d88b;
+}
+
+.list-cell:selected {
+    -fx-background-color: #a8d88b;
+    -fx-text-fill: #2d5016;
+}
